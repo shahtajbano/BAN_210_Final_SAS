@@ -1,0 +1,72 @@
+*------------------------------------------------------------*
+User:                shaht
+Date:                August 07, 2022
+Time:                16:02:56
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          1
+INPUT      NOMINAL           8
+TARGET     NOMINAL           1
+ 
+ 
+ 
+ 
+Partition Summary
+ 
+                                     Number of
+Type             Data Set          Observations
+ 
+DATA        EMWS1.FIMPORT_train         286
+TRAIN       EMWS1.Part_TRAIN            199
+VALIDATE    EMWS1.Part_VALIDATE          87
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Summary Statistics for Class Targets
+ 
+Data=DATA
+ 
+            Numeric                            Frequency
+Variable     Value       Formatted Value         Count      Percent    Label
+ 
+ Class         .       no-recurrence-events       201       70.2797    Class
+ Class         .       recurrence-events           85       29.7203    Class
+ 
+ 
+Data=TRAIN
+ 
+            Numeric                            Frequency
+Variable     Value       Formatted Value         Count      Percent    Label
+ 
+ Class         .       no-recurrence-events       140       70.3518    Class
+ Class         .       recurrence-events           59       29.6482    Class
+ 
+ 
+Data=VALIDATE
+ 
+            Numeric                            Frequency
+Variable     Value       Formatted Value         Count      Percent    Label
+ 
+ Class         .       no-recurrence-events        61       70.1149    Class
+ Class         .       recurrence-events           26       29.8851    Class

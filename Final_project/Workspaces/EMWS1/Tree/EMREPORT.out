@@ -1,0 +1,176 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+Variable Importance
+
+                                                                                Ratio of
+                      Number of                                               Validation
+Variable              Splitting                            Validation        to Training
+  Name       Label      Rules           Importance         Importance         Importance
+
+deg_malig                 1                 1.0000             1.0000             1.0000
+inv_nodes                 1                 0.5727             0.3054             0.5334
+ 
+                                                                                                                                                                                                                                                                
+ 
+Tree Leaf Report
+
+                                   Training
+                                   Percent
+Node               Training      RECURRENCE-
+ Id     Depth    Observations       EVENTS
+
+  2       1           140            0.19   
+  4       2            44            0.45   
+  5       2            15            0.87   
+ 
+                                                                                               
+ 
+ 
+Fit Statistics
+
+Target=Class Target Label=Class
+
+   Fit
+Statistics    Statistics Label                Train    Validation
+
+  _NOBS_      Sum of Frequencies            199.000       87.000 
+  _MISC_      Misclassification Rate          0.241        0.241 
+  _MAX_       Maximum Absolute Error          0.867        0.867 
+  _SSE_       Sum of Squared Errors          67.628       35.113 
+  _ASE_       Average Squared Error           0.170        0.202 
+  _RASE_      Root Average Squared Error      0.412        0.449 
+  _DIV_       Divisor for ASE               398.000      174.000 
+  _DFT_       Total Degrees of Freedom      199.000         .    
+ 
+                                                                                               
+ 
+ 
+Classification Table
+
+Data Role=TRAIN Target Variable=Class Target Label=Class
+
+                                                Target       Outcome    Frequency      Total
+       Target                Outcome          Percentage   Percentage     Count     Percentage
+
+NO-RECURRENCE-EVENTS   NO-RECURRENCE-EVENTS     75.0000      98.5714       138        69.3467 
+RECURRENCE-EVENTS      NO-RECURRENCE-EVENTS     25.0000      77.9661        46        23.1156 
+NO-RECURRENCE-EVENTS   RECURRENCE-EVENTS        13.3333       1.4286         2         1.0050 
+RECURRENCE-EVENTS      RECURRENCE-EVENTS        86.6667      22.0339        13         6.5327 
+
+
+Data Role=VALIDATE Target Variable=Class Target Label=Class
+
+                                                Target       Outcome    Frequency      Total
+       Target                Outcome          Percentage   Percentage     Count     Percentage
+
+NO-RECURRENCE-EVENTS   NO-RECURRENCE-EVENTS     78.5714      90.1639        55        63.2184 
+RECURRENCE-EVENTS      NO-RECURRENCE-EVENTS     21.4286      57.6923        15        17.2414 
+NO-RECURRENCE-EVENTS   RECURRENCE-EVENTS        35.2941       9.8361         6         6.8966 
+RECURRENCE-EVENTS      RECURRENCE-EVENTS        64.7059      42.3077        11        12.6437 
+ 
+                                                                                               
+ 
+ 
+Event Classification Table
+
+Data Role=TRAIN Target=Class Target Label=Class
+
+  False       True        False       True
+Negative    Negative    Positive    Positive
+
+   46          138          2          13   
+
+
+Data Role=VALIDATE Target=Class Target Label=Class
+
+  False       True        False       True
+Negative    Negative    Positive    Positive
+
+   15          55           6          11   
+ 
+                                                                                               
+ 
+ 
+Assessment Score Rankings
+
+Data Role=TRAIN Target Variable=Class Target Label=Class
+
+                                                                                    Mean
+                            Cumulative       %      Cumulative     Number of     Posterior
+Depth      Gain     Lift       Lift      Response   % Response   Observations   Probability
+
+   5    192.316   2.92316     2.92316     86.6667     86.6667         10          0.86667  
+  10    157.565   2.22815     2.57565     66.0606     76.3636         10          0.66061  
+  15    122.815   1.53313     2.22815     45.4545     66.0606         10          0.45455  
+  20    105.439   1.53313     2.05439     45.4545     60.9091         10          0.45455  
+  25     95.014   1.53313     1.95014     45.4545     57.8182         10          0.45455  
+  30     86.552   1.44245     1.86552     42.7662     55.3095         10          0.42766  
+  35     68.851   0.62639     1.68851     18.5714     50.0612         10          0.18571  
+  40     55.574   0.62639     1.55574     18.5714     46.1250         10          0.18571  
+  45     45.248   0.62639     1.45248     18.5714     43.0635         10          0.18571  
+  50     36.987   0.62639     1.36987     18.5714     40.6143         10          0.18571  
+  55     30.228   0.62639     1.30228     18.5714     38.6104         10          0.18571  
+  60     24.596   0.62639     1.24596     18.5714     36.9405         10          0.18571  
+  65     19.830   0.62639     1.19830     18.5714     35.5275         10          0.18571  
+  70     15.745   0.62639     1.15745     18.5714     34.3163         10          0.18571  
+  75     12.205   0.62639     1.12205     18.5714     33.2667         10          0.18571  
+  80      9.107   0.62639     1.09107     18.5714     32.3482         10          0.18571  
+  85      6.373   0.62639     1.06373     18.5714     31.5378         10          0.18571  
+  90      3.944   0.62639     1.03944     18.5714     30.8175         10          0.18571  
+  95      1.770   0.62639     1.01770     18.5714     30.1729         10          0.18571  
+ 100      0.000   0.62639     1.00000     18.5714     29.6482          9          0.18571  
+
+
+Data Role=VALIDATE Target Variable=Class Target Label=Class
+
+                                                                                    Mean
+                            Cumulative       %      Cumulative     Number of     Posterior
+Depth      Gain     Lift       Lift      Response   % Response   Observations   Probability
+
+   5    116.516   2.16516     2.16516     64.7059     64.7059          5          0.86667  
+  10    116.516   2.16516     2.16516     64.7059     64.7059          4          0.86667  
+  15    116.516   2.16516     2.16516     64.7059     64.7059          5          0.86667  
+  20    106.553   1.71682     2.06553     51.3072     61.7284          4          0.76364  
+  25     75.758   0.37179     1.75758     11.1111     52.5253          4          0.45455  
+  30     51.562   0.45103     1.51562     13.4791     45.2945          5          0.40078  
+  35     41.915   0.76797     1.41915     22.9508     42.4114          4          0.18571  
+  40     34.473   0.76797     1.34473     22.9508     40.1874          4          0.18571  
+  45     27.264   0.76797     1.27264     22.9508     38.0328          5          0.18571  
+  50     22.676   0.76797     1.22676     22.9508     36.6617          4          0.18571  
+  55     18.852   0.76797     1.18852     22.9508     35.5191          4          0.18571  
+  60     14.885   0.76797     1.14885     22.9508     34.3334          5          0.18571  
+  65     12.212   0.76797     1.12212     22.9508     33.5347          4          0.18571  
+  70      9.890   0.76797     1.09890     22.9508     32.8406          4          0.18571  
+  75      7.383   0.76797     1.07383     22.9508     32.0914          5          0.18571  
+  80      5.635   0.76797     1.05635     22.9508     31.5691          4          0.18571  
+  85      4.076   0.76797     1.04076     22.9508     31.1032          4          0.18571  
+  90      2.350   0.76797     1.02350     22.9508     30.5873          5          0.18571  
+  95      1.118   0.76797     1.01118     22.9508     30.2192          4          0.18571  
+ 100      0.000   0.76797     1.00000     22.9508     29.8851          4          0.18571  
+ 
+                                                                                               
+ 
+ 
+Assessment Score Distribution
+
+Data Role=TRAIN Target Variable=Class Target Label=Class
+
+ Posterior     Number                     Mean
+Probability      of      Number of     Posterior
+   Range       Events    Nonevents    Probability    Percentage
+
+ 0.85-0.90       13           2         0.86667         7.5377 
+ 0.45-0.50       20          24         0.45455        22.1106 
+ 0.15-0.20       26         114         0.18571        70.3518 
+
+
+Data Role=VALIDATE Target Variable=Class Target Label=Class
+
+ Posterior     Number                     Mean
+Probability      of      Number of     Posterior
+   Range       Events    Nonevents    Probability    Percentage
+
+ 0.85-0.90       11           6         0.86667        19.5402 
+ 0.45-0.50        1           8         0.45455        10.3448 
+ 0.15-0.20       14          47         0.18571        70.1149 

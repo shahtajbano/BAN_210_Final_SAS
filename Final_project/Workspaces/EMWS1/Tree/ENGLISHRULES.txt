@@ -1,0 +1,32 @@
+*------------------------------------------------------------*
+ Node = 2
+*------------------------------------------------------------*
+if deg_malig < 2.5 or MISSING
+then 
+ Tree Node Identifier   = 2
+ Number of Observations = 140
+ Predicted: Class=recurrence-events = 0.19
+ Predicted: Class=no-recurrence-events = 0.81
+ 
+*------------------------------------------------------------*
+ Node = 4
+*------------------------------------------------------------*
+if inv_nodes IS ONE OF: 0-2, 15-17
+AND deg_malig >= 2.5
+then 
+ Tree Node Identifier   = 4
+ Number of Observations = 44
+ Predicted: Class=recurrence-events = 0.45
+ Predicted: Class=no-recurrence-events = 0.55
+ 
+*------------------------------------------------------------*
+ Node = 5
+*------------------------------------------------------------*
+if inv_nodes IS ONE OF: 3-5 or MISSING
+AND deg_malig >= 2.5
+then 
+ Tree Node Identifier   = 5
+ Number of Observations = 15
+ Predicted: Class=recurrence-events = 0.87
+ Predicted: Class=no-recurrence-events = 0.13
+ 
